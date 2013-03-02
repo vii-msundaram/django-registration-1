@@ -1,15 +1,17 @@
 Fork of django-registration for Django 1.5
 
-========================
+-----------------------
 What's Different?
-========================
+-----------------------
 Replaces function based views with class based views
 Modifies __init__.get_version() to pass unittest expectations
 Prefix test files with test_ for django-discover-runner
 Drop deprecated urls.py
 The docs are now incorrect, but not yet updated
 
+-----------------------
 Install:
+-----------------------
 
 settings.py:
 
@@ -26,7 +28,7 @@ for account email verification:
 
  or to create without verification:
 
-   url(r'^account/', include('registration.backends.simple.urls')), 
+    url(r'^account/', include('registration.backends.simple.urls')), 
 
 To run tests, go to project root and run
 

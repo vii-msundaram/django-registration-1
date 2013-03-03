@@ -10,7 +10,7 @@
 
 
 {% block content %}
-  <form action="/join/signup" method="post">{% csrf_token %}
+  <form action="{% url 'registration_register' %}" method="post">{% csrf_token %}
     {{ form.as_p }}
     <p class="submit"><button type="submit">Submit</button></p>
   </form>

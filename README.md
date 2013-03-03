@@ -6,7 +6,8 @@ What's Different?
 * Modifies \_\_init\_\_.get_version() to pass unittest expectations
 * Prefix test files with test_ for django-discover-runner
 * The docs are now incorrect, but not yet updated.
-* Restrict accounts to 1/email address
+* Ability to restrict accounts to 1/email address
+    * Disabled by default. Uncomment clean_email in registration/forms.py to use
     * If disabled, password reset emails will be sent to all accounts using the reset email address
 
 
@@ -35,7 +36,7 @@ for account email verification:
 ###site_fixture.json
 Update domain and name with the correct fields, then call:
 	
-	python manage.py loaddata registration/site_fixture.json
+	python manage.py loaddata registration/fixtures/site_fixture.json
 
 Alternatively, open the /admin panel and manually edit the data
 
